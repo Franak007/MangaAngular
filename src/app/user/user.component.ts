@@ -4,13 +4,8 @@ import {IUser} from "../iuser";
 
 @Component({
   selector: 'app-user',
-  template: `
-    <p>
-      user works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: `user.component.html`,
+  styles: []
 })
 export class UserComponent implements OnInit{
 

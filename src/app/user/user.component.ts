@@ -18,12 +18,16 @@ export class UserComponent implements OnInit{
 
   users:IUser[] = []
   ngOnInit() {
+    this.getUser();
     console.log('marche');
   }
 
   getUser(){
     this.service.fetchAll().subscribe( data =>{
       this.users = data;
+      // console.log(this.users);
+      return this.users;
+
     })
   }
 

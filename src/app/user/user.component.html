@@ -1,5 +1,14 @@
-<div *ngFor="let user of users">
-    <a (click)="selectUser(user)">{{user.name}}</a>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div *ngFor="let user of users">
+                <p>{{user.name}}
+                <button (click)="selectUser(user)" type="button" class="btn btn-secondary btn-sm"> Voir le détail </button>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <app-user-detail [userC]="usersParent"></app-user-detail>
+        </div>
+    </div>
 </div>
-
-<app-user-detail [userC]="usersParent"></app-user-detail>

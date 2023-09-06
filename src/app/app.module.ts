@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { Error404Component } from './error404/error404.component';
 import { UserComponent } from './user/user.component';
 import {HttpClientModule} from "@angular/common/http";
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {HttpClientModule} from "@angular/common/http";
     MangaDetailsComponent,
     NavbarComponent,
     Error404Component,
-    UserComponent
+    UserComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,5 @@
 <div *ngFor="let user of users">
-    <a href="{{user.name}}">{{user.name}}</a>
+    <a (click)="selectUser(user)">{{user.name}}</a>
 </div>
+
+<app-user-detail [userC]="usersParent"></app-user-detail>

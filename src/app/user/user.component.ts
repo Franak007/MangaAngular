@@ -12,6 +12,7 @@ export class UserComponent implements OnInit{
   constructor(private service:UserService){}
 
   users:IUser[] = []
+  usersParent : IUser | undefined ;
   ngOnInit() {
     this.getUser();
     console.log('marche');
@@ -24,6 +25,10 @@ export class UserComponent implements OnInit{
       return this.users;
 
     })
+  }
+
+  selectUser(user:IUser){
+    this.usersParent = user;
   }
 
 }

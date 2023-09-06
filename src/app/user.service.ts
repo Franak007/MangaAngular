@@ -9,4 +9,8 @@ export class UserService {
   url = "https://jsonplaceholder.typicode.com/users"
 
   constructor(private http: HttpClient) { }
+
+  fetchAll() {
+    return this.http.get(this.url);
+  }
 }

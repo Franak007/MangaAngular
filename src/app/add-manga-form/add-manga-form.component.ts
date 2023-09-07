@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {NgForm} from "@angular/forms";
 import {MANGAS} from "../mock-manga";
 import {Manga} from "../entities";
+import {MangaService} from "../manga.service";
 
 @Component({
   selector: 'app-add-manga-form',
@@ -10,13 +11,11 @@ import {Manga} from "../entities";
 })
 export class AddMangaFormComponent {
 
+  constructor(private mangaService: MangaService) {}
+
   onSubmit(form: NgForm){
     console.log(form.value);
-    this.addToMangaList(form.value);
-  }
-
-  addToMangaList(manga:Manga){
-    MANGAS.push(manga);
+    return this.mangaService.addToMangaList(form.value)
   }
 
 }

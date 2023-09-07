@@ -12,4 +12,8 @@ export class MangaService {
   fetchById(id:number):Manga|undefined {
     return MANGAS[id];
   }
+
+  addToMangaList(manga:Manga){
+    MANGAS.push(manga);
+  }
 }

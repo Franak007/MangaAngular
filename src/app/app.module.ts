@@ -12,6 +12,8 @@ import { UserComponent } from './user/user.component';
 import {HttpClientModule} from "@angular/common/http";
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { UserRedirectComponent } from './user-redirect/user-redirect.component';
+import { AddMangaFormComponent } from './add-manga-form/add-manga-form.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -23,12 +25,14 @@ import { UserRedirectComponent } from './user-redirect/user-redirect.component';
     Error404Component,
     UserComponent,
     UserDetailComponent,
-    UserRedirectComponent
+    UserRedirectComponent,
+    AddMangaFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,9 @@
+<form #addForm="ngForm" (ngSubmit)="onSubmit(addForm)">
+    <input type="number" class="m-3" name="id" ngModel required><br>
+    <input type="text" class="m-3" name="title" ngModel required><br>
+    <input type="text" class="m-3" name="author" ngModel required><br>
+    <input type="text" class="m-3" name="description" ngModel required><br>
+    <input type="text" class="m-3" name="image" ngModel required><br>
+
+    <button type="submit" class="btn btn-primary m-3">Login</button>
+</form>

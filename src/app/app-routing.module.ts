@@ -7,11 +7,13 @@ import {Error404Component} from "./error404/error404.component";
 import {UserComponent} from "./user/user.component";
 import {UserDetailComponent} from "./user-detail/user-detail.component";
 import {UserRedirectComponent} from "./user-redirect/user-redirect.component";
+import {AddMangaFormComponent} from "./add-manga-form/add-manga-form.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'liste', component: MangaListComponent},
   {path: 'liste/:id', component: MangaDetailsComponent},
+  {path: 'addManga', component: AddMangaFormComponent},
   {path: 'user', component: UserComponent},
   {path: 'user/:id', component: UserRedirectComponent},
   {path: '**', component: Error404Component}

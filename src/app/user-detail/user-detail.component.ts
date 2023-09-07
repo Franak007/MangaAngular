@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {IUser} from "../iuser";
 import {UserService} from "../user.service";
 import {ActivatedRoute} from "@angular/router";
@@ -10,13 +10,5 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class UserDetailComponent {
     @Input() userC: IUser | undefined;
-
-    constructor(private userService: UserService, route: ActivatedRoute) {
-    }
-
-    selectedUser: IUser | undefined;
-
-
-
 
 }

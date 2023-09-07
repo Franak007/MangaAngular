@@ -11,6 +11,7 @@ import { Error404Component } from './error404/error404.component';
 import { UserComponent } from './user/user.component';
 import {HttpClientModule} from "@angular/common/http";
 import { UserDetailComponent } from './user-detail/user-detail.component';
+import { UserRedirectComponent } from './user-redirect/user-redirect.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
     NavbarComponent,
     Error404Component,
     UserComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    UserRedirectComponent
   ],
   imports: [
     BrowserModule,

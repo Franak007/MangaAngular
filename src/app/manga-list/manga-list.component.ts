@@ -14,4 +14,5 @@ export class MangaListComponent implements OnInit{
     console.log(this.mangaList);
   }
 
+  
 }

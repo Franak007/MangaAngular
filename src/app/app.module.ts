@@ -14,6 +14,7 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
 import { UserRedirectComponent } from './user-redirect/user-redirect.component';
 import { AddMangaFormComponent } from './add-manga-form/add-manga-form.component';
 import {FormsModule} from "@angular/forms";
+import { AddUserFormComponent } from './add-user-form/add-user-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {FormsModule} from "@angular/forms";
     UserComponent,
     UserDetailComponent,
     UserRedirectComponent,
-    AddMangaFormComponent
+    AddMangaFormComponent,
+    AddUserFormComponent
   ],
   imports: [
     BrowserModule,

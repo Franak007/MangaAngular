@@ -1,0 +1,8 @@
+<form #addUser="ngForm" (ngSubmit)="onSubmit(addUser)">
+    <input type="number" class="m-3" name="id" placeholder="id" ngModel required><br>
+    <input type="text" class="m-3" name="name" placeholder="name" ngModel required><br>
+    <input type="text" class="m-3" name="username" placeholder="username" ngModel required><br>
+    <input type="text" class="m-3" name="email" placeholder="email" ngModel required><br>
+
+    <button type="submit" class="btn btn-primary m-3">Login</button>
+</form>

@@ -20,4 +20,9 @@ export class UserService {
     return this.http.get<IUser>(this.url+'/'+id);
   }
 
+  addUser(user: IUser) {
+    return this.http.post<IUser>(this.url, user);
+
+  }
+
 }

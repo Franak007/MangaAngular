@@ -18,7 +18,7 @@ export class AddUserFormComponent {
     this.user.addUser(form.value);
     this.user.addUser(form.value).subscribe(data =>{
       this.users.push(data);
-      console.log(this.users)
+
     });
   }
 
